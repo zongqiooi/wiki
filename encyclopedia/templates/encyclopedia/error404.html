@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    <h1>404. That's an error.</h1> 
+    </br>
+    <p>The requested URL <b>/wiki/{{ entry }}</b> was not found on this server.</p>
+    <p>Click <a href="{% url 'new' %}">here</a> to create your new page and make our wiki bigger! =D </p>
+
+{% endblock %}
